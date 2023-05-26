@@ -7,7 +7,6 @@ namespace Exam.Entities
     public class SubjectExam
     {
         [Key]
-        [Required]
         public int id { get; set; }
         [Required]
         [StringLength(100)]
@@ -17,6 +16,9 @@ namespace Exam.Entities
         [Required]
         public DateTime ExamDate { get; set; }
         [Required]
+        [StringLength(50)]
+        public string classroom { get; set; }
+        [Required,StringLength(50)]
         public string Faculty { get; set; }
     }
 }

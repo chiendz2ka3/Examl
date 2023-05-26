@@ -9,5 +9,9 @@ namespace Exam.Entities
 
         }
         public DbSet<SubjectExam> SubjectExam { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+
+        public DbSet<ClassRoom> classroom { get; set; }
+        public DbSet<Faculty> faculty { get; set; }
     }
 }
