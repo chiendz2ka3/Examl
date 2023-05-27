@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@using (Html.BeginForm())
+{
+        <div>
+                <label for="SubJectName">Name:</label>
+                <input type="text" id="Name" name="SubJectName"/>
+        </div>
+             <div>
+                 <label for="StartTime">StartTime:</label>
+                 <input type="text" id="StartTime" name="StartTime"/>
+        </div>
+        <div>
+                  <label for="ExamDate">ExamDate:</label>
+                  <input type="datetime" id="ExamDate" name="ExamDate"/>
+        </div>
+        <div>
+                  <label for="ExamDate">ExamDate:</label>
+              <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  
+                </select>
+       </div>
+}
+

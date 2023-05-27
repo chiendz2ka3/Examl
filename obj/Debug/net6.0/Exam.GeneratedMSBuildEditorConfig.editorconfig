@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\c#Workspace\Exam\Exam
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/c\#Workspace/Exam/Exam/Views/Exam/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#Workspace/Exam/Exam/Views/Exam/CreateView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxDcmVhdGVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#Workspace/Exam/Exam/Views/Exam/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

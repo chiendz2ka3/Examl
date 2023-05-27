@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "CreateView";
+    
+}
+
+@using (Html.BeginForm())
+{
+            <div>
+                    <label for="SubJectName">Name:</label>
+                    <input type="text" id="Name" name="SubJectName"/>
+            </div>
+                 <div>
+                     <label for="StartTime">StartTime:</label>
+                     <input type="text" id="StartTime" name="StartTime"/>
+            </div>
+            <div>
+                      <label for="ExamDate">ExamDate:</label>
+                      <input type="datetime" id="ExamDate" name="ExamDate"/>
+            </div>
+            <div>
+                   <label for="ClassRoom">ClassRoom:</label>
+                  <select name="ClassRoom" id="ClassRoom">
+                         @foreach (var item in ViewBag.data1)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    </select>
+           </div>
+            <div>
+                        <label for="Faculty">Faculty:</label>
+                        <select name="Faculty" id="Faculty">
+                        @foreach (var item in ViewBag.data2)
+                        {
+                          <option value="@item.Value">@item.Text</option>
+                        }
+                        </select>
+            </div>
+           <button formaction="@Url.Action("Create", "Exam")" type="submit">Create</button>
+}
+

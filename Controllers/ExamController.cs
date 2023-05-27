@@ -18,11 +18,26 @@ namespace Exam.Controllers
             return View(lst);
         }
 
-
-        public IActionResult Create()
+        [HttpGet]
+          public IActionResult CreateView()
         {
-
+            List<ClassRoom> lstclass = _context.classroom.ToList();
+            List<Faculty> lstFaculy = _context.faculty.ToList();
+            ViewBag.data1 = lstclass;
+            ViewBag.data2 = lstFaculy;
             return View();
+        }
+        [HttpPost]
+        public IActionResult Create(SubjectExam subject)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(subject);
+                _context.SaveChanges();
+                return RedirectToAction("index");
+
+            }
+            return View(subject);
         }
     }
 }
